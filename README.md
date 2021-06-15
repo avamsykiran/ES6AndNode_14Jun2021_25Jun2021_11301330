@@ -91,8 +91,52 @@ Javascript (ECMA Script 6)
 
         ref script004.js
 
+    Arrays
+    ---------------------
 
-            
+        new Array();
+        [];
+
+        .push
+        .pop
+        .splice
+        .sort
+
+        .concate
+        .map
+        .reduce
+        .forEach
+        .filter
+
+         ref script006.js
+
+    spread operator & rest operator
+    -------------------------------
+        ... is used to convert an array into a comma seperated list of items
+        ... is used to convert an assosiative array (object) into a comma seperated list of key:value pairs
+
+        ... is called rest operator when used with args in a function, allowing the function to 
+                accept any number of comma seperted values.
+
+
+       ref script007.js
+
+    collasce operator ??
+    ----------------------------
+
+        used to take an alternate value in case of null.
+
+        ref script007.js
+
+    String, Math and Date classes
+    -----------------------------
+
+
+    Classes and Inheretence (ES6)
+    -----------------------------
+
+        ref script008.js
+
 
 
 
