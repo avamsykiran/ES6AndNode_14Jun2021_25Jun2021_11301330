@@ -132,10 +132,71 @@ Javascript (ECMA Script 6)
     -----------------------------
 
 
-    Classes and Inheretence (ES6)
-    -----------------------------
+    Constructor Functions and Classes and Inheretence (ES6)
+    --------------------------------------------------------
 
         ref script008.js
+
+    Prototypes
+    --------------------------------------------------------
+
+        a prototype is an implict proeprty that
+        every javascript object has and is by default null,
+        but can be used to extend the capabilities(features) of an
+        object.
+
+        ref script009.js
+
+    Call and Apply 
+    --------------------------------------------------------
+
+        call and apply are two functions of every javascript function.
+
+        and these function will allow us to invoke a resuable function on a varaity of resources.
+
+        ref script010.js
+
+    Asynchronous Programming
+    --------------------------------------------------------
+
+        setTimeout                ref script011.js
+
+        setInterval               ref script012.js
+
+        clearTimeout            will cancel the timeout
+
+        clearInterval           will cancel the interval
+                                ref script013.js
+
+        Promise
+                    is a class whose constructor takes
+                    a function having two parameters:
+                        called resolve and reject.
+
+                        the resolve is used to signal the successful completion of a the job
+
+                        the reject is used to signal errorsome completion
+                        of the job.
+
+                let job = function(resolve,reject){
+                    //do what ever you wnat,
+                    //but call resolve() once successfully done
+                    //or call reject if an error occurs.
+                }
+
+                let p = new Promise(job);
+
+                When will the job run???
+
+                    p.then(function1,function2); //here the job runs
+
+                    function1 is executed if the job completes successfully
+                    function2 is executed if the job encounters an error.
+
+                ref script014.js
+
+
+
 
 
 
