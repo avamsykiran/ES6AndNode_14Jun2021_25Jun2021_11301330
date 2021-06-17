@@ -193,7 +193,22 @@ Javascript (ECMA Script 6)
                     function1 is executed if the job completes successfully
                     function2 is executed if the job encounters an error.
 
-                ref script014.js
+                ref script014.js to   ref script016.js
+
+        async
+
+            the async keyword is used to make any normal function to be
+            an asynchronous function and return a promise object.
+
+              ref script017.js
+
+        await
+
+            the await keywrd is used only inside an async function.
+            it lets the async function wait until the all internal
+            asynchonous operatiosn to complete.
+
+             ref script018.js
 
 
 
