@@ -210,8 +210,23 @@ Javascript (ECMA Script 6)
 
              ref script018.js
 
+    Generator Functions
+    --------------------------------------------------------
 
+            These are special type of fuctions capable of returning
+            multiple values midway of execution.
 
+            function *funName(){
+                //10 line of code
+                yeild v1;
+                //20 lines of code
+                yeild v2;
+                //5 line of code
+                return finalVal;
+            }
+
+             ref script019.js
+                                                                    
 
 
 
