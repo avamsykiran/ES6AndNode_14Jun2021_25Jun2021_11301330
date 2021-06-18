@@ -1,6 +1,5 @@
 https://github.com/avamsykiran/ES6AndNode_14Jun2021_25Jun2021_11301330.git
 
-
 Lab Setup
 --------------
     NodeJs      Dev Platform  https://nodejs.org/en/
@@ -204,7 +203,8 @@ Javascript (ECMA Script 6)
 
         await
 
-            the await keywrd is used only inside an async function.
+            the await keywrd is used only inside an async function,
+            on a Promise object .
             it lets the async function wait until the all internal
             asynchonous operatiosn to complete.
 
@@ -227,6 +227,80 @@ Javascript (ECMA Script 6)
 
              ref script019.js
                                                                     
+ClientSideJs
+-------------------------------------------------------------------------------------------------
+
+    BOM - Browser Object Model
+    -----------------------------
+
+        window is a global object representing a browser and all of its methods and properties
+        can be accessed with or without prefixing 'window.'
+
+        window.alert("sometext");
+        window.confirm("sometext");
+        window.prompt("sometext","defaultText");
+
+        window.document
+        window.innerHeight      the inner height of the browser window (in pixels)
+        window.innerWidth       the inner width of the browser window (in pixels)
+        window.open()           open a new window
+        window.close()          close the current window
+        window.moveTo()         move the current window
+        window.resizeTo()       resize the current window
+
+        window.screen.width
+        window.screen.height
+        window.screen.availWidth
+        window.screen.availHeight
+        window.screen.colorDepth
+        window.screen.pixelDepth
+
+        window.location.href        returns the href (URL) of the current page
+        window.location.hostname    returns the domain name of the web host
+        window.location.pathname    returns the path and filename of the current page
+        window.location.protocol    returns the web protocol used (http: or https:)
+        window.location.assign(url)    loads a new page
+
+        window.history.back()       same as clicking back in the browser
+        window.history.forward()    same as clicking forward in the browser
+        window.history.go()         Loads a specific URL from the history list
+
+    DOM Manipulation
+    -------------------------
+        
+        document.getElementById(id)	            Find an element by element id
+        document.getElementsByTagName(name)	    Find all elements by tag name
+        document.getElementsByClassName(name)	Find all elements by class name
+        document.querySelector("selector")      Find an element by css selector
+        document.querySelectorAll("selector")   Find all elements by css selector
+        
+        element.innerHTML =  new html content	Change the inner HTML of an element
+        element.attribute = new value	        Change the attribute value of an HTML element
+        element.style.property = new style	    Change the style of an HTML element
+
+        element.parentNode                      Access the parent element of an element
+        element.childNodes[nodenumber]          Access the specific child element of an element
+        element.firstChild                      Access the first child element of an element
+        element.lastChild                       Access the last child element of an element
+        element.nextSibling                     Access the next sibling element of an element
+        element.previousSibling                 Access the prev sibling element of an element
+        
+        element.setAttribute(attribute, value)	Change the attribute value of an HTML element
+        
+        document.createElement(element)	        Create an HTML element
+        document.removeChild(element)	        Remove an HTML element
+        document.appendChild(element)	        Add an HTML element
+        document.replaceChild(new, old)	        Replace an HTML element
+        document.write(text)	                Write into the HTML output stream
+
+        element.appendChild(childEle)
+        element.removeChild(childEle)
+        element.replaceChild(newChildEle, oldChildEle)
+        element.remove()
+
+        Two Ways Adding event handler code to an onclick event
+            element.onclick = function(){code}	    
+            element.addEventListener("click",function(){code})
 
 
 
