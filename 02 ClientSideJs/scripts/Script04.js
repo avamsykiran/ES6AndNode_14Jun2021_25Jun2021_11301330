@@ -23,6 +23,9 @@ const updateData = () => {
     tbodyObj = document.createElement("tbody");
     tableObj.append(tbodyObj);
 
+    let totalCredit=0;
+    let totalDebit=0;
+
     txns.forEach(
         t => {
             let tr = document.createElement("tr");
@@ -38,9 +41,17 @@ const updateData = () => {
             tds[1].innerText = t.header;
             if (t.type === 'CREDIT') {
                 tds[2].innerText = t.amount;
+                totalCredit+=t.amount;
             } else {
                 tds[3].innerText = t.amount;
+                totalDebit+=t.amount;
             }
         }
     );
+
+    let bal = totalCredit-totalDebit;
+
+    document.querySelector("#tc").innerText=totalCredit;
+    document.querySelector("#td").innerText=totalDebit;
+    document.querySelector("#tb").innerText=bal;
 }

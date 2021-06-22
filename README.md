@@ -228,7 +228,7 @@ Javascript (ECMA Script 6)
              ref script019.js
                                                                     
 ClientSideJs
--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
     BOM - Browser Object Model
     -----------------------------
@@ -302,6 +302,71 @@ ClientSideJs
             element.onclick = function(){code}	    
             element.addEventListener("click",function(){code})
 
+NodeJs
+-----------------------------------------------------------------------------------------
 
+    Node JS is a javascript execution environment.
 
+    And is used to create, execute and manage javascript projects.
 
+        node        is the javascript executor 
+        npm         node package manager
+                    package refers to any javascirpt project.
+
+                    npm init -y
+                      this create a new proejct in the current folder
+
+                    npm install -g package-name
+                        this command install a thid party javascript package 
+                        in the folder 'c:\users\your-user-name\.npm'
+
+                    npm install package-name --save
+                        this cocommand install a thid party javascript package 
+                        in the './node_modules' folder and makes 
+                        an entry in package.json
+                    
+                    npm uninstall package-name
+                        to uninstall any installed packages.
+
+                    npm install
+                        is going to install all packages
+                        listed in package.json file 
+
+                    npm start       indicate startign the execution of a node project
+                                     run the command marked as 'start' in package.json
+                    
+                    npm test        indicate startign the testing of a node project
+                                     run the command marked as 'test' in package.json
+
+                    npm run cmdName is used to run custom life cycle commands
+                                    created in package.json
+                
+        npx         used to execute a ajvascript tool
+                    without downlaoding it into our drives (disks).
+
+                    npx package-name
+
+        Node JS Libraries
+        ----------------------------------------
+        requireJS
+                    it is sued to export resources
+                    from one js file and use them in another.
+
+                    file1.js
+                    ---------------
+                        const f1 =() =>"Hello";
+                        export.f2 = () => "Hai";
+
+                    file2.js
+                    ---------------
+                        let x = require("file1")        
+                        x.f2();
+                        //f1 can not be accessed here.
+
+        fs          stands for file system
+                    this fs library offers functions
+                    to read and write data into files.
+                    both synchronously and asynchronously.
+
+                    
+        
