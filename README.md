@@ -368,5 +368,60 @@ NodeJs
                     to read and write data into files.
                     both synchronously and asynchronously.
 
-                    
+        http        is used for createing our own
+                    web server.
+
+                    And on top of this webserver we can create
+                    a static/dynamic web app or Rest API
+
+        url         is a in-built libray that is used to
+                    parse a requet and retrive query parmaeters and other
+                    url related data.
+ExpressJs
+-----------------------------------------------------------------------------------------
+
+    expressjs is a javascrpt library that supports
+    webserver and request handlers.
+
+    md node-proj05
+    cd node-proj05
+    npm init -y
+    npm --save install express
+
+    express()   that returns a webserver object (say app)
+            
+            app.get(url,reqHandlingFunction1)
+            app.post(url,reqHandlingFunction2)
+            app.put(url,reqHandlingFunction3)
+            app.delete(url,reqHandlingFunction4)
+
+            the respective reqHandlingFuction get executed when a respective
+            req (get/post/put/delete) comes to that specific url.
+
+            app.use((req,res,next)=>{})
+                    this mehtod passed to use function will be executed
+                    every time before a request is passed to the respective handler.
+
+                    generally used to preform any common jobs like
+                    security or logging or auditing..etc
+
+                    and is commonly know as INTERCEPTOR.
+
+
+    MVC - Model View and Controller
+    Model       is any data that flow from view to controller or vice-versa
+    View        is any page that appear in resposne to a request
+    Controller  is the one that handles the incoming req and generates an appropriate
+                response.
+
+
+REST api using  ExpressJs on NodeJS
+-----------------------------------------------------------------------------------------
+
+    md node-proj06
+    cd node-proj06
+    npm init -y
+    npm --save install express          //the webserver framewok
+    npm --save install body-parser      //used to parse and stringify js objescts to JSON
+    npm --save install cors             //used to enable cross-origin-resource-sharing
         

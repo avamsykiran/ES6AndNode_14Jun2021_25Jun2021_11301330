@@ -1,0 +1,14 @@
+{
+  "name": "proj05",
+  "version": "1.0.0",
+  "description": "an expressjs usage demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "vamsy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
