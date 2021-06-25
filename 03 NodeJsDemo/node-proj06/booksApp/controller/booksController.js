@@ -1,10 +1,12 @@
 var bs = require("../service/bookService");
 
+/* GET http://localhost:PORT/books */
 exports.defaultGetHandler = (req, res) => {
     res.status(200);
     res.send(bs.getAllBooks());
 }
 
+/* GET http://localhost:PORT/books/24 */
 exports.getByIdHandler = (req, res) => {
     let bookId = req.params.id;
 
@@ -19,6 +21,7 @@ exports.getByIdHandler = (req, res) => {
     }
 }
 
+/* POST http://localhost:8888/books */
 exports.createBookHandler = (req, res) => {
 
     let book = {
@@ -32,6 +35,7 @@ exports.createBookHandler = (req, res) => {
     res.send();
 }
 
+/* PUT http://localhost:8888/books */
 exports.modifyBookHandler = (req, res) => {
 
     let book = {
@@ -51,6 +55,7 @@ exports.modifyBookHandler = (req, res) => {
     res.send();
 }
 
+/* DELETE http://localhost:PORT/books/24 */
 exports.deleteByIdHandler = (req, res) => {
     let bookId = req.params.id;
 

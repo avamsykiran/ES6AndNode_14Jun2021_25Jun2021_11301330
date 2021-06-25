@@ -11,12 +11,7 @@
     },
     {
         "bookId": 103,
-        "title": "The Geetha",
-        "price": 9256
-    },
-    {
-        "bookId": 104,
-        "title": "Learn Angular in 7 days",
-        "price": 556
+        "title": "The Great Fall - Ashoka",
+        "price": 12256
     }
 ]

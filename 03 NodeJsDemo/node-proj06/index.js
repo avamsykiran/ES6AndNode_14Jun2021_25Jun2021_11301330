@@ -11,18 +11,6 @@ app.use(bp.urlencoded({extended:false}));
 app.use(bp.json());
 app.use(cors());
 
-/*
-
-    app.use("/userAudit",(res,resp,next){
-        if(isAuthenticated(req)){
-            next();
-        }else{
-            resp.send('Not authorized');
-        }
-    });
-
-*/
-
 //Routing or Url Mapping
 //------------------------------------
 app.get("/books",bc.defaultGetHandler);
